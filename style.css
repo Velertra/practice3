@@ -1,66 +1,44 @@
-form {
-    /* Center the form on the page */
-    margin: 0 auto;
-    width: 400px;
-    /* Form outline */
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
   }
   
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
   }
   
-  form li + li {
-    margin-top: 1em;
-  }
-  
-  label {
-    /* Uniform size & alignment */
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
     display: inline-block;
-    width: 90px;
-    text-align: right;
   }
   
-  input,
-  textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, textareas have a monospace font */
-    font: 1em sans-serif;
-  
-    /* Uniform text field size */
-    width: 300px;
-    box-sizing: border-box;
-  
-    /* Match form field borders */
-    border: 1px solid #999;
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
   }
   
-  input:focus,
-  textarea:focus {
-    /* Additional highlight for focused elements */
-    border-color: #000;
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
   }
   
-  textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
   
-    /* Provide space to type some text */
-    height: 5em;
-  }
-  
-  .button {
-    /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
-  }
-  
-  button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: 0.5em;
-  }
-  {}
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}

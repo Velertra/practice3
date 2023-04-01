@@ -1,101 +1,83 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>:required and :optional with generated content</title>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Josefin Sans', sans-serif;
-        margin: 20px auto;
-        max-width: 460px;
-      }
-
-      fieldset {
-        padding: 10px 30px 0;
-      }
-
-      legend {
-        color: white;
-        background: black;
-        padding: 5px 10px;
-      }
-
-      fieldset > div {
-        margin-bottom: 20px;
-        display: flex;
-        flex-flow: row wrap;
-      }
-
-      button, label, input {
-        display: block;
-        font-family: inherit;
-        font-size: 100%;
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 5px;
-        height: 30px;
-      }
-
-      input {
-        box-shadow: inset 1px 1px 3px #ccc;
-        border-radius: 5px;
-      }
-
-      input:hover, input:focus {
-        background-color: #eee;
-      }
-
-      input + span {
-        position: relative;
-      }
-
-      input:required + span::after {
-        font-size: 0.7rem;
-        position: absolute;
-        content: "required";
-        color: white;
-        background-color: black;
-        padding: 5px 10px;
-        top: -26px;
-        left: -70px;
-      }
-
-      button {
-        width: 60%;
-        margin: 0 auto;
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>##practice##</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
-<body>
-    <form>
-        <p>Required fields are labelled with "required".</p>
-      <fieldset>
-        <legend>Feedback form</legend>
+  <body>
 
-        <p>Required fields are labelled with "required".</p>
-        <div>
-          <label for="fname">First name: </label>
-          <input id="fname" name="fname" type="text" required>
-          <span></span>
-        </div>
-        <div>
-          <label for="lname">Last name: </label>
-          <input id="lname" name="lname" type="text" required>
-          <span></span>
-        </div>
-        <div>
-          <label for="email">Email address (include if you want a response): </label>
-          <input id="email" name="email" type="email">
-          <span></span>
-        </div>
-        <div><button>Submit</button></div>
-      </fieldset>
-    </form>
-</body>
+    
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+    
 
-</html>
+    <script>
+
+
+
+
+
+
+
+
+
+
+ /*      function twoSum(nums, second) {
+        let also = nums;
+        let another = [];
+        let hope = [];
+        let sum = nums.map(function (num, idx) {
+          for(let x = 0; x < also.length; x++) {
+          if(nums[x] + also[idx] == second){
+            another.push(idx)                   //adds array to itself, each, seperately
+            break;                              //then show what array shows most
+          }   
+        }
+        })    
+        let friend =  another.slice(-2);
+        console.log(friend)
+      };
+
+      let first = [3, 3];
+      let second = 6;
+      let third = [2,7,11,15];
+      let forth = 9;
+      let fifth = [3,2,4];
+      let sixth = 6;
+
+      //twoSum(first, second);
+      //twoSum(fifth, sixth);
+      twoSum(third, forth);
+
+
+
+
+
+      var longestCommonPrefix = function(strs) {
+    let firstStr = strs[0];
+    for (let i = 0; i < firstStr.length; i++) {         //finds commen prefix
+        for (let s of strs) {
+            if (s[i] !== firstStr[i]) return s.slice(0, i);
+        }
+    }
+    return strs[0];
+};
+
+ */
+
+  </script>
+
+    
+  </body>
+    
+  </html>

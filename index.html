@@ -17,12 +17,11 @@
         box-sizing: border-box;
       }
     </style>
-    <!-- <link rel="stylesheet" href="../styles.css" /> -->
-  </head>
+     </head>
 
   <body>
 
-      <!-- <header>
+      <header>
 
       </header>
 
@@ -30,7 +29,7 @@
 
       </section>
 
-      <script> -->
+      <script>
 
     <section class="preview">
 
@@ -40,79 +39,9 @@
 
   </body>
   <script>
-    const section = document.querySelector('section');
+  
 
-    let para1 = document.createElement('p');
-    let para2 = document.createElement('p');
-    let motherInfo = 'The mother cats are called ';
-    let kittenInfo;
-    const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json';
-
-    fetch(requestURL)
-    .then(response => response.text())
-    .then(text => displayCatInfo(text))
-
-    function displayCatInfo(catString) {
-      let total = 0;
-      let male = 0;
-
-      // Add your code here
-      let maybe = JSON.parse(catString);
-      let needed = new Array();
-      let kittenNumber = '';
-      let males = '';
-      let females = '';
-
-      for(let i = 0; i < maybe.length; i++){
-      let dammit = maybe[i]['name'];
-      let trial = needed.push(dammit)
-        for(let x = 0; x < maybe[i]['kittens'].length; x++){
-          let runner = maybe[i]['kittens'][x]
-          let showMe = maybe[i]["kittens"][x]['gender']
-         // for(g = 0; g < showMe)
-          if(showMe == "m"){
-            males++
-          } else {
-            females++
-          }
-
-          
-        //  let number = x + 
-         // number += kittenNumber;
-         kittenNumber++
-
-          //console.log()
-        }
-      
-      }
-     
-      let final = needed.join(", ")
-     
-      motherInfo += final
-       let finish = kittenNumber.toString();
-      
-      let otherfinal = "kittens: " + finish + "        "+"Females: " + females+ "       " + "Males: " + males;
-      //otherfinal += kittenInfo
-   
-
-    console.log(females)
-    
-      kittenInfo = otherfinal
-
-
-
-      // Don't edit the code below here!
-
-      para1.textContent = motherInfo;
-      para2.textContent = kittenInfo;
-    }
-
-    section.appendChild(para1);
-    section.appendChild(para2);
-
-
-
-/* 
+ 
         
         async function populate() {
 
@@ -173,7 +102,7 @@
         }
 
         populate()
-         */
+         
       </script>
   </body>
 </html>
